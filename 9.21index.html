@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#atm{
+				width:400px;
+				height:600px;
+				border-radius:3%;
+				box-shadow: 1;
+				background-color:dodgerblue;
+				margin:0 auto;
+				
+			
+			}
+		</style>
+	</head>
+	<body>
+		<script>
+			var sub = prompt("请输入你的账户/用户名");
+			var pas = prompt("请输入你的密码");
+			var money = 100000;
+			if((sub==123456)&&(pas==123456789)){
+				alert("登录成功卡内余额"+money);
+				var qk =Number(prompt("取钱金额"));
+				money=money-qk;
+				alert("您的账户余额为"+money);
+			}else{
+				alert("验证账户/密码错误！默认账户为数字123456 密码为123456789请重新验证")
+			}
+		</script>
+		
+
+	</body>
+</html>
